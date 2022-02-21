@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --mainColor:#ff206e;
+    --black:#000;
+    --client:#555;
+}
+body{
+ background-image: url('../img/light_dot.jpg');
+ position: relative;
+}
+.text-mainColor{
+    color:var(--mainColor);
+}
+.bg-mainColor{
+    background-color:var(--mainColor);
+}
+.bg-black{
+    background-color:var(--black);
+}
+.text-black{
+    color:var(--black);
+}
+.text-gray{
+    color:var(--client);
+}
+/* start header */
+.header{
+    background-image: url('../img/me.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+.icons{
+     width:18%;   
+     cursor: pointer;
+    }
+.header .icons i{
+       border: 0.5px solid transparent;
+       transition:0.8s;
+       font-size:20px; 
+    }
+.header .icons i:hover{
+    color:var(--mainColor); 
+    border-color:rgb(170, 163, 163);
+  }
+
+.home h1, h4{
+position: relative;
+}
+.home h1 span,h4 span{
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right:0;
+    left: 0;
+    width: 250px;
+    background-color: white;
+}
+
+    .home h4 span{  
+       width: 292px;
+    }
+
+.home h1 .view span{
+    width: 50px;
+   }
+/* end header */
+
+/* start about */
+.title h2{
+    color: #f1f1f1;
+    font-size: 5rem;
+    z-index: -1;
+    
+}
+.title h3{
+    color: rgb(0, 0, 0);
+    font-size: 2.5rem;
+}
+
+.Mytitle h2{
+    font-size: 6rem;
+}
+.Mytitle h3{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+}
+.texy-gray{
+ color:#aaa;
+}
+
+.my-skill p{
+ font-size: 1rem;
+}
+.home-bar{
+ 
+    display: flex;
+    position: relative;
+    bottom: -170px;
+}
+
+.dot{
+    position: absolute;
+    border: 1px solid #333;
+    width: 22px;
+    height: 32px;
+    margin: auto;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    transition: 0.5s;
+    bottom:0;
+    left: 50%;
+}
+
+a span{
+     position: absolute;
+     background-color: white;
+     top: 3px;
+     height: 2px;
+     width: 2px;
+     border-radius: 50%;
+     bottom: 0;
+     transition: 0.1s;
+}
+/* end about */
+
+/* start services */
+.services{
+    background-image: url('../img/dark_dot.jpg');
+    
+}
+.services_box i{
+    box-shadow: 0 3px 20px rgb(0 0 0 / 15%); 
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    transition:.35s;
+}
+.client_img i{
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+}
+
+.services_box:hover i{
+    color: var(--mainColor);
+}
+
+.services-text h5:after{
+    content: ''; 
+    position: absolute;
+    width: 30px;
+    height: 1px;
+    left: 45%;
+    top: 60px; 
+    background-color: var(--mainColor);    
+    transition: 0.6s;
+}
+
+.services_box:hover h5:after{
+    width: 40px;
+}
+
+.services-text{
+    text-align: center;
+    padding: 3rem 1rem 2rem;
+}
+/* end services */
+
+/* start portfolio */
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--mainColor);
+    background-color: transparent;
+}
+.nav-pills .nav-link {
+    border: 0;
+    color: var(--black);
+    font-size: 18px;
+}
+
+.portfolio-item{
+    position: relative; 
+    overflow: hidden;
+    
+}
+.portfolio-overlay{
+ position: absolute;
+ top: -200px;
+ left: 0;
+ right: 0;
+ bottom: 0;
+ width: 90%;
+ height: 90%;
+ background-color: #fff;
+ opacity: 0;
+ margin:auto ;
+ margin-top: 0px;
+ opacity: 0;
+ transition: all 1s; 
+} 
+
+.overlay-content {
+width:30%;
+text-align: center;
+position: absolute;
+top:30%;
+}
+
+.overlay-content a i{
+    color: #fff;  
+    background-color: #000;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    padding: 0.40rem;
+    transition: 0.5s;
+}
+
+.img-thumbnail{
+    transition: all 0.5s;
+}
+.overlay-content a:hover i{
+    color:var(--mainColor);  
+}
+/* end portfolio */
+.owl-carousel{
+    background-image:url(../img/dark_dot.jpg);
+}
+/* start owl carosel */
+/* end owl carusel */
+.send{
+    border:none;
+    background-color: white;
+}
+.send:hover{
+    background-color: var(--mainColor);
+}
+.form-control{
+    border: none;
+    border-bottom:1px solid #888;
+    transition: 0.3s;
+}
+.form-control:hover{
+    border-bottom:1px solid var(--mainColor);
+}
+.client-text{
+    text-align:center;
+}
+ .navbar{
+   transition:all 1s ;
+} 
+
+/* button up */
+.btn-up{
+ position: absolute;
+ bottom: 20px;
+ right: 30px;
+ cursor: pointer;
+
+ z-index: 99999999;
+}
+/* end button up */
+
+/* .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .show>.nav-link {
+    color:white;
+} */
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+  
+}
+
+.owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+  }
+
+  /*start footer */
+ .copyright p{
+    font-size: .9rem;
+}
+  

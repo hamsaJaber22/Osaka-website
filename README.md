@@ -1,2 +1,2 @@
-Osaka
-# bootstrab-jquery
+# Osaka
+ bootstrab & jquery project
